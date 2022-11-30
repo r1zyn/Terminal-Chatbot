@@ -1,0 +1,14 @@
+# output
+build
+
+# dependencies
+node_modules
+
+# environment variables
+.env
+
+# typescript
+tsconfig.tsbuildinfo
+
+# yarn
+yarn.lock

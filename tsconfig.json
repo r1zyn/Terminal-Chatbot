@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "composite": false,
+        "target": "ESNext",
+        "lib": [
+            "ESNext",
+            "ESNext.Array",
+            "ESNext.AsyncIterable",
+            "ESNext.Intl",
+            "ESNext.Symbol",
+            "DOM"
+        ],                                                   
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "ESNext",
+        "rootDir": "src",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "typeRoots": [
+            "node_modules/@types"
+        ],                                                   
+        "declaration": false,
+        "outDir": "build",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": false,
+        "noImplicitThis": true,
+        "useUnknownInCatchVariables": false,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowUnusedLabels": true,
+        "allowUnreachableCode": false,
+        "skipLibCheck": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "build",
+        "node_modules",
+        "tests"
+    ]
+}
