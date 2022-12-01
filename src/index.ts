@@ -52,7 +52,9 @@ cli.on("line", async (): Promise<void> => {
 
         fetch(url, options)
             .then((res: Response): Promise<BrainResponse> => res.json() as Promise<BrainResponse>)
-            .then((json: BrainResponse): void => cli.write(format("bot", json.cnt.replaceAll(/\<[A-Za-z]+\>[A-Za-z\c\s\S\d\D\w\W\x\O]*/g, ""))))
+            .then((json: BrainResponse): void => cli.write(format("bot", json.cnt
+                .replaceAll(/\<[A-Za-z]+\>[A-Za-z\c\s\S\d\D\w\W\x\O]*/g, "")
+                .replaceAll(/\s[A-Za-z]+\>\<\/[A-Za-z]+/g, ""))))
             .catch(console.error);
     });
 });
